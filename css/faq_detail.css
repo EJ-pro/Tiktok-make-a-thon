@@ -1,0 +1,191 @@
+/* faq_detail.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    /* Black background */
+    color: #FFF;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-70 {
+    width: 60%;
+    margin: auto;
+}
+.btn-upload {
+    width: 150px;
+    height: 30px;
+    background: #000;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  #file {
+    display: none;
+  }
+.form-section {
+    width: 56%;
+    height: 70px;
+    margin: auto;
+    white-space: nowrap;
+    /* 줄넘김 비활성화 */
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #FFF;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.phone-input input {
+    display: inline-block;
+}
+
+.email-input input,
+.email-input select {
+    display: inline-block;
+    border: 1px solid #ccc;
+    height: 70px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.privacy-policy {
+    max-height: 313px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.submit-button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+}
+
+.email-input span {
+    margin: 0 5px;
+}
+
+.pc-only {
+    display: block;
+}
+
+.tab-only,
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .pc-only {
+        display: none;
+    }
+
+    .tab-only {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .tab-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+}
+
+/* 태블릿 화면 스타일 */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-section {
+        width: 80%;
+        /* 태블릿 화면에서 폼 너비 조정 */
+        height: 58px;
+        margin: auto;
+        white-space: nowrap;
+        /* 줄넘김 비활성화 */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea,
+    input[type="submit"] {
+        font-size: 19px;
+        /* 태블릿 화면에서 폰트 크기 조정 */
+    }
+    .width-70 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .email-input select {
+        height: 58px;
+        margin: auto;
+    }
+    .width-100 {
+        width: 100%;
+        /* 모바일 화면에서 이미지 폭 조정 */
+    }
+}
+
+/* 모바일 화면 스타일 */
+@media (max-width: 767px) {
+    .form-section {
+        width: 90%;
+        /* 모바일 화면에서 폼 너비 조정 */
+        height: 45px;
+        margin: auto;
+        white-space: nowrap;
+        /* 줄넘김 비활성화 */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    input[type="submit"] {
+        font-size: 15px;
+        /* 모바일 화면에서 폰트 크기 조정 */
+    }
+    .email-input span {
+        margin: 0px;
+    }
+    .width-70 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .width-100 {
+        width: 100%;
+        /* 모바일 화면에서 이미지 폭 조정 */
+    }
+}

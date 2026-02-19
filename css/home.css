@@ -1,0 +1,49 @@
+/* home.css */
+main {
+    background-color: #000;
+    margin-top: 60px; /* 헤더 높이만큼 마진 추가 */
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 이미지 너비 옵션 */
+.images img.width-85 {
+    width: 85%;
+    margin-top: -50px;
+}
+
+.images img.width-100 {
+    width: 100%;
+}
+
+/* Default to hide all images */
+.pc-only,
+.mobile-only,
+.tab-only {
+    display: none;
+}
+
+/* Show PC images for larger screens */
+@media (min-width: 1025px) {
+    .pc-only {
+        display: block;
+    }
+}
+
+/* Show Tablet images for medium screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tab-only {
+        display: block;
+    }
+}
+
+/* Show Mobile images for smaller screens */
+@media (max-width: 767px) {
+    .mobile-only {
+        display: block;
+    }
+}
